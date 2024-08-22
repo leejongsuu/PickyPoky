@@ -1,8 +1,6 @@
 🌐 PickyPoky : HyperCLOVA X 기반 일기 분석 AI 서비스
 ---
 
-</br>
-
 ### 🍀 팀원 소개
 ![image](https://github.com/user-attachments/assets/37b09a51-2632-4913-9681-d9cd2f31cb89)
 
@@ -16,10 +14,9 @@
 *2024.08.02*
 </br>
 
----
-
 </br>
 
+---
 ### 🍀 개요
 **📍PickyPoky는 당신의 감정과 하루를 귀여움으로 채워주는 특별한 일기 어플리케이션입니다.📍** 
 </br>
@@ -39,268 +36,74 @@
 </br>
 
 ---
+
+### 🍀 PickyPoky IA
+![스크린샷 2024-08-21 164213](https://github.com/user-attachments/assets/feca8b18-6c67-4bcc-a154-64aad9553ed8)
+
 </br>
 
 ### 🍀 주요 기능
 ![4-주요기능](https://github.com/user-attachments/assets/ddd86025-5ad7-48d0-bf7d-090396ffbee8)
 
-
-
-
+</br>
 
 ---
+
 ### 📍 결과물
-**배포 사이트** <br>
 
 **시연 영상** <br>
-[1차 출시](https://drive.google.com/file/d/10inKFQjI8fsM7oqXdLQUS53h_G6_GTfK/view?usp=sharing) <br>
+[1차 출시] ![pickypoky](https://github.com/user-attachments/assets/ff9477aa-2314-49f8-9834-1a3baf372822)
+
+</br>
 
 ---
-### 📍 향후 기능
-이미지 업로드
-폴더에있는 통계분석 사진<- _+ 감정 다양화
-그러고 DB에 사용자가 선택한 키워드와 감정 뿐만아니라 AI가 추천해준 감정과 키워드도 저장하고있음 -> 나중에 하이퍼클로바 커스텀 프롬프트 엔지니어링>? 통해서 좀 더 정확성을 가질 수 있도록 
+### ✨ 향후 추가 기능
 
+1. **일기 작성이 더 즐거워질 거예요!**  
+   일기 쓸 때 **이미지**나 **동영상**도 업로드할 수 있다면 어떨까요? 단순한 텍스트가 아닌, 생동감 넘치는 일기로 매일매일이 더 특별해집니다. 오늘 찍은 사진이나 재미있는 동영상도 일기 속에 쏙쏙! 감정을 더 풍부하게 표현할 수 있어요.
 
-[기업홈페이지 생성] <br>
-![기업홈페이지 생성](https://github.com/CloudService-mobile-app/backend/assets/126854628/07bdafb5-14bd-40e6-8979-d67991b88342)
+</br>
 
-[개별 사용자의 관리 페이지] <br>
-![클라우드 서비스 신청서_모바일앱개발협동조합(수정본v2)_15](https://github.com/CloudService-mobile-app/backend/assets/126854628/e128f044-ba2a-41f1-9f45-0dee5e03fca9)
+2. **AI가 당신의 감정을 더 잘 이해하도록**  
+   우리 PickyPoky는 이미 사용자가 선택한 키워드와 감정뿐만 아니라, AI가 추천해준 감정과 키워드도 꼼꼼히 기록하고 있어요. 앞으로는 **하이퍼클로바 커스텀 프롬프트 엔지니어링**을 통해, AI가 더 정확하게 당신의 감정을 캐치할 수 있도록 업그레이드될 예정입니다. AI와 함께하는 감정 탐험, 기대되지 않나요?
 
-[전체 서비스의 관리자 페이지] <br>
-![클라우드 서비스 신청서_모바일앱개발협동조합(수정본v2)_16](https://github.com/CloudService-mobile-app/backend/assets/126854628/62ef9131-9d0a-4fc3-8dc5-42fdf43e6235)
+</br>
 
----
+3. **감정 표현의 무한 확장!**  
+   지금은 감정 이모지가 긍정, 부정, 중립 세 가지뿐이지만, 앞으로는 **다양한 감정**이 추가될 거예요! 행복, 슬픔, 설렘, 사랑 등등, 당신의 감정을 더욱 세밀하게 표현할 수 있도록 귀여운 이모지들이 새롭게 등장합니다. 어떤 이모지가 추가될지 기대해 주세요!
 
-### 📍 아키텍쳐 
-![모바일앱협동조합 (5)](https://github.com/CloudService-mobile-app/backend/assets/126854628/a0cc2eb7-a7db-46e6-a567-e340f1ea873b)
+</br>
 
 ---
 
-### 📍 사용 기술스택
+### 🍀 아키텍쳐 
+![image](https://github.com/user-attachments/assets/58ec1b7b-7d89-4bbd-ba45-31ac86476e6d)
+
+</br>
+
+### 🍀 사용 기술스택
 - SpringBoot
 - JPA
+- Spring Security + Jwt + OAuth 2.0
 - MySQL
-- Redis
-- AWS
-    - EC2
-    - S3
-    - CloudFront
-    - Route53
-    - CloudWatch
+- NCP
+    - Server(VPC)
+    - Cloud DB for MySQL(VPC)
+    - AI·NAVER API
+    - Global DNS
+    - CLOVA Studio
+    - Cloud Log Analytics
 - Docker
-- Bucket4j
-- Lettuce
 - Nginx
-- Jenkins
+
+</br>
 
 ---
 
-### 📍 사용 라이브러리
-- Spring Boot Starter
-- JWT
-- Swagger
-- Firebase
-- OkHttp
-- QueryDSL
-- Lombok
-- Jackson
-- AWS SDK
-    - CloudWatch
-    - Route53
-    - CloudFront
-    - S3
-- Database
-    - H2
-    - MySQL Connector
-- Redis
-    - Redisson
-    - Embedded Redis
-    - Bucket4j Core
-    - Bucket4j Redis
-- Logging
-    - Discord Appender
+### 📚 학습 성과
 
----
+이번 프로젝트에서 저는 **Naver Cloud Platform(NCP)** 을 활용한 인프라 구축과 AI 연동 작업을 주도적으로 담당했습니다. 이전에는 주로 AWS를 통해 인프라를 구축해왔지만, 이번 프로젝트를 통해 처음으로 NCP를 활용하게 되었습니다. API 서버부터 Cloud DB, Global DNS, Cloud Log Analytics까지, NCP가 제공하는 한국 시장에 최적화된 서비스와 사용자 친화적인 UI/UX를 경험하며 인프라 구축과 관리가 얼마나 효율적일 수 있는지 깨달았습니다. 이 과정에서 NCP의 장점뿐만 아니라, 새로운 클라우드 환경에 신속하게 적응하는 방법을 배우는 소중한 기회를 얻었습니다.
 
-### 📍프로젝트 구조
-```
-└── 🗂 main
-    ├── 🗂 java
-    │   └── 🗂 com
-    │       └── 🗂 example
-    │           └── 🗂 cloudservice
-    │               ├── 📑 CloudServiceApplication.java
-    │               ├── 🗂 auth
-    │               │   ├── 🗂 cookie 
-    │               │   │   └── 📑 CookieUtil.java
-    │               │   ├── 🗂 entity 
-    │               │   │   └── 📑 RefreshToken.java
-    │               │   ├── 🗂 jwt 
-    │               │   │   ├── 📑 JwtAuthenticationFilter.java    
-    │               │   │   ├── 📑 JwtAuthorizationFilter.java   
-    │               │   │   ├── 📑 JwtProvider.java       
-    │               │   │   ├── 📑 MemberDetails.java   
-    │               │   │   └── 📑 MemberDetailsService.java   
-    │               │   ├── 🗂 repository
-    │               │   │   └── 📑 RefreshTokenRepository.java
-    │               │   ├── 🗂 service
-    │               │   │   └── 📑 RefreshTokenService.java    
-    │               │   └── 📑 MemberRole.java           
-    │               ├── 🗂 cofig 
-    │               │   ├── 🗂 Bucket4j 
-    │               │   │   └── 📑 TokenBucketResolver.java 
-    │               │   ├── 🗂 CloudWatch 
-    │               │   │   └── 📑 CloudWatchConfig.java   
-    │               │   ├── 🗂 jpa 
-    │               │   │   └── 📑 JpaAuditingConfig.java
-    │               │   ├── 🗂 mail 
-    │               │   │   └── 📑 MailConfig.java
-    │               │   ├── 🗂 RateLimit 
-    │               │   │   ├── 📑 RateLimitAspect.java   
-    │               │   │   └── 📑 RateLimiterConfig.java     
-    │               │   ├── 🗂 redis
-    │               │   │   ├── 📑 RedisCacheConfig.java   
-    │               │   │   └── 📑 RedisConfig.java   
-    │               │   ├── 🗂 redisson
-    │               │   │   └── 📑 RedissonConfig.java
-    │               │   ├── 🗂 s3
-    │               │   │   ├── 📑 awstest.java   
-    │               │   │   └── 📑 S3Config.java     
-    │               │   ├── 🗂 security
-    │               │   │   ├── 📑 SecurityConfig.java   
-    │               │   │   └── 📑 SecurityUtils.java   
-    │               │   └── 🗂 swagger
-    │               │       └── 📑 SwaggerConfig.java  
-    │               ├── 🗂 global 
-    │               │   ├── 🗂 base 
-    │               │   │   └── 📑 BaseTimeEntity.java
-    │               │   ├── 🗂 common 
-    │               │   │   └── 📑 CommonResDto.java
-    │               │   ├── 🗂 dto
-    │               │   │   ├── 📑 CommonResponse.java   
-    │               │   │   └── 📑 ErrorResponse.java  
-    │               │   ├── 🗂 error
-    │               │   │   ├── 📑 BucketCapacityException.java 
-    │               │   │   ├── 📑 DuplicateAccountException.java 
-    │               │   │   ├── 📑 DuplicateUrlException.java           
-    │               │   │   ├── 📑 EncryptException.java 
-    │               │   │   ├── 📑 FileTooLargeException.java 
-    │               │   │   ├── 📑 InvalidTokenException.java   
-    │               │   │   ├── 📑 NotFoundAccountException.java 
-    │               │   │   ├── 📑 PasswordNotMatchException.java 
-    │               │   │   ├── 📑 S3UploadException.java  
-    │               │   │   ├── 📑 UnAuthorizedException.java 
-    │               │   │   ├── 📑 WebsiteLimitException.java           
-    │               │   │   └── 📑 WebsiteNotFoundException.java  
-    │               │   ├── 🗂 log
-    │               │   │   ├── 📑 FilterConfig.java   
-    │               │   │   └── 📑 MDCFilter.java 
-    │               │   ├── 📑 ErrorCodes.java  
-    │               │   ├── 📑 ErrorResponse.java  
-    │               │   ├── 📑 GlobalExceptionHandler.java  
-    │               │   └── 📑 GlobalExceptionHandlerFilter.java          
-    │               ├── 🗂 member 
-    │               │   ├── 🗂 application
-    │               │   │   ├── 🗂 dto
-    │               │   │   │    ├──📑 MemberResponseDto.java     
-    │               │   │   │    └──📑 MemeberRequestDto.java       
-    │               │   │   └── 🗂 impl
-    │               │   │   │    ├──📑 MailServiceImpl.java     
-    │               │   │   │    ├──📑 MemberServiceImpl.java
-    │               │   │   │    └──📑 MiddleTableServiceImpl.java      
-    │               │   │   ├── 📑 MemberService.java  
-    │               │   │   └── 📑 MiddleTableService.java        
-    │               │   ├── 🗂 domain
-    │               │   │   ├── 🗂 repository
-    │               │   │   │    ├──📑 MemberRepository.java     
-    │               │   │   │    └──📑 MiddleTableRepository.java   
-    │               │   │   ├── 📑 Member.java  
-    │               │   │   └── 📑 MiddleTable.java       
-    │               │   ├── 🗂 exception
-    │               │   │   └── 🗂 dto
-    │               │   │        ├──📑 CommonResDto.java     
-    │               │   │        └──📑 CommonResponse.java 
-    │               │   ├── 🗂 presentation
-    │               │   │   └── 📑 MemberController.java
-    │               │   ├── 🗂 restapi
-    │               │   │   └── 📑 MemberApi.java
-    │               │   └── 🗂 utils
-    │               │       ├── 📑 MemberScheduler.java
-    │               │       └── 📑 MemberUtils.java   
-    │               ├── 🗂 visit 
-    │               │   ├── 🗂 application  
-    │               │   │   └── 🗂 dto
-    │               │   │   │    └──📑 VisitResponseDto.java   
-    │               │   │   └── 🗂 impl
-    │               │   │   │    ├──📑 VisitRedisService.java     
-    │               │   │   │    └──📑 VisitServiceImpl.java    
-    │               │   │   └── 📑 VisitService.java       
-    │               │   ├── 🗂 domain
-    │               │   │   ├── 🗂 repository    
-    │               │   │   │    ├──📑 VisitRepository.java 
-    │               │   │   │    ├──📑 VisitRepositoryImpl.java 
-    │               │   │   │    └──📑 VisitRepositoryJPA.java   
-    │               │   │   └── 📑 Visit.java    
-    │               │   ├── 🗂 exception
-    │               │   │   ├── 🗂 dto
-    │               │   │   │    ├──📑 CommonResponse.java     
-    │               │   │   │    └──📑 RateLimiterException.java 
-    │               │   ├── 🗂 presentation
-    │               │   │   └── 📑 VisitController.java
-    │               │   ├── 🗂 restapi
-    │               │   │   └── 📑 VisitApi.java
-    │               │   └── 🗂 scheduler
-    │               │       └── 📑 VisitScheduler.java
-    │               └── 🗂 websiteaa 
-    │                   ├── 🗂 application
-    │                   │   ├── 🗂 dto
-    │                   │   │    ├──📑 WebsiteaaRequestDto.java     
-    │                   │   │    └──📑 WebsiteaaResponseDto.java       
-    │                   │   └── 🗂 impl
-    │                   │   │    └──📑 WebsiteaaServiceImpl.java      
-    │                   │   └── 📑 WebsiteaaService.java        
-    │                   ├── 🗂 domain
-    │                   │   ├── 🗂 repository    
-    │                   │   │    └──📑 WebsiteaaRepository.java   
-    │                   │   ├── 📑 Template.java  
-    │                   │   └── 📑 Websiteaa.java       
-    │                   ├── 🗂 exception
-    │                   │   └── 🗂 dto
-    │                   │        └──📑 CommonResponse.java 
-    │                   ├── 🗂 presentation
-    │                   │   └── 📑 WebsiteaaController.java
-    │                   ├── 🗂 restapi
-    │                   │   └── 📑 WebsiteaaApi.java
-    │                   └── 🗂 utils
-    │                       │── 📑 MultipartJackson2HttpMessageConverter.java   
-    │                       │── 📑 WebsiteaaEnums.java         
-    │                       └── 📑 WebsiteaaUtils.java 
-    └── 🗂 resources
-         └── 🗂 scripts   
-         │   ├── 📑 getVisitCounts.lua
-         │   └── 📑 incrementVisitCount.lua   
-         └── 🗂 temlates   
-         │   ├── 📑 bizcraft_logo.png
-         │   └── 📑 email-template.html          
-         ├── 📑 application.yaml      
-         ├── 📑 application-dev.yml      
-         ├── 📑 application-local.yml      
-         ├── 📑 application-prod.yml  
-         ├── 📑 application-test.yml
-         └── 📑 logback.xml  
-                                        
-```
----
+인프라 구축이 완료된 후, 저는 **하이퍼클로바 AI**와의 연동 작업을 진행했습니다. AI 모델의 응답 시간을 단축하고, AI가 제공하는 데이터를 효과적으로 처리하기 위한 알고리즘을 직접 설계하고 구현하며, AI가 제공하는 데이터를 정교하게 다루는 데 집중했습니다. 이러한 과정을 통해 AI 응답 처리에 대한 깊은 이해를 얻었고, 이 데이터를 기반으로 유용한 인사이트를 도출하는 데 성공했습니다.
 
-### commit message convention
-- feat: 새로운 기능 추가
-- fix: 버그 수정
-- docs: 문서
-- style: 포맷팅, 누락된 세미콜론 등
-- refactor: 코드 리팩토링
-- test: 테스트 관련
-- chore: 기타 수정
-- build: 빌드 시스템 또는 외부 의존성에 영향을 주는 변경
-- remove: 파일을 삭제
+또한, **OAuth**를 이용한 사용자 인증 처리와 **일기 작성 및 관리 기능** 등의 백엔드 개발 작업도 주도했습니다. PickyPoky에서는 단순한 일기 작성 기능을 넘어서, AI가 추천하는 키워드와 감정을 기반으로 데이터를 축적하고 이를 활용한 **커스텀 프롬프트 엔지니어**링 전략을 세우는 것을 목표로 삼았습니다. 이러한 데이터는 장기적으로 AI 모델의 학습에 중요한 역할을 하며, 사용자 맞춤형 경험을 제공하는 데 핵심적인 자산이 됩니다. 이 과정에서 데이터 수집과 활용 방법에 대한 심도 있는 이해를 갖추게 되었고, 장기적인 데이터 전략의 중요성을 깊이 깨달았습니다.
