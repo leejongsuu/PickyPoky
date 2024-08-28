@@ -1,6 +1,8 @@
 🌐 PickyPoky : HyperCLOVA X 기반 일기 분석 AI 서비스
 ---
 
+</br>
+
 ### 🍀 팀원 소개
 ![image](https://github.com/user-attachments/assets/37b09a51-2632-4913-9681-d9cd2f31cb89)
 
